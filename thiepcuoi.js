@@ -239,6 +239,19 @@ function showMusicAfterDoor() {
   }
 }
 
+/* TỰ ĐỘNG TẮT NHẠC KHI RỜI TRANG */
+document.addEventListener("visibilitychange", function () {
+  if (document.hidden) {
+    music.pause();
+    musicBtn.classList.remove("playing");
+  } else {
+    music.play();
+    musicBtn.classList.add("playing");
+  }
+});
+
+
+
 
 /* GỌI SAU KHI CỬA MỞ XONG 
 function showMusicAfterDoor() {
