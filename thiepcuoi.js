@@ -75,7 +75,7 @@ setInterval(createPetal, 1600);
     const targetY = target.getBoundingClientRect().top + startY;
     const distance = targetY - startY;
   
-    const duration = 800; // thời gian cuộn (ms) – tăng lên nếu muốn chậm hơn
+    const duration = 400; // thời gian cuộn (ms) – tăng lên nếu muốn chậm hơn
     let startTime = null;
   
     function easeOutCubic(t) {
