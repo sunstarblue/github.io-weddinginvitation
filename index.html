@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp mời cưới Vũ Cường 💌 Thu Cương </title>
+  <link rel="stylesheet" href="thiepcuoi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="petal-container"></div>
+
+
+<!-- INTRO CỬA ĐỎ CAO CẤP -->
+<div id="door-overlay">
+  <div class="door left">
+    <div class="seal left">
+      <span>囍</span>
+    </div>
+  </div>
+
+  <div class="door right">
+    <div class="seal right">
+      <span>囍</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- BACKGROUND MỜ -->
+<!--<div class="bg-blur"></div>-->
+<!-- ===== TRANG BÌA ===== -->
+<section class="cover">
+  <h1 class="title">Save The Date</h1>
+
+  <p class="names">Xuân Cường & Thu Cương</p>
+  <p class="date">Thứ 4, 25 • 02 • 2025</p>
+
+  <div class="photo">
+    <img src="img/anh1.jpg" alt="couple">
+  </div>
+
+  <button class="open-btn" onclick="openInvite()">
+    💌 Xem thư mời
+  </button>
+</section>
+
+<!-- ===== PHONG THƯ (KÉO LÊN) ===== -->
+<section class="envelope" id="envelope">
+  <div class="letter">
+    <h2 class="reveal">Thư mời</h2>
+
+    <h1 class="tham reveal">
+      Tham dự lễ cưới của chúng tôi<br>
+    </h1>
+
+    <h3 class="reveal">Xuân Cường & Thu Cương</h3>
+    <div class="couple-wrap reveal">
+      <!-- Chú rể -->
+      <div class="person">
+        <img src="img/anh5.jpg" alt="Cuong">
+        <h4>Xuân Cường</h4>
+        <p>
+          Mẹ: Trương Thị Định
+        </p>
+        <p class="address">
+          Địa chỉ: Thôn Quần Đội – Xã Xuân Hòa<br>
+          Tỉnh Thanh Hóa
+        </p>
+      </div>
+      <!-- Cô dâu -->
+      <div class="person">
+        <img src="img/anh6.jpg" alt="Thu">
+        <h4>Thu Cương</h4>
+        <p>
+          Bố: Nguyễn Văn Long<br>
+          Mẹ: Nguyễn Thị Thẩm
+        </p>
+        <p class="address">
+          Địa chỉ: Thôn Vân Điềm – Xã Thư Lâm<br>
+          Đông Anh – Thành phố Hà Nội
+        </p>
+      </div>
+    </div>
+
+    <p class="footer-text reveal">
+      Trân trọng kính mời quý khách<br>
+      đến tham dự và chung vui cùng chúng tôi!
+    </p>
+
+  </div>
+</section>
+<section class="wedding-info" id="wedding-info">
+
+  <h2 class="reveal">Hôn lễ được tổ chức vào lúc</h2>
+
+  <p class="date-time reveal">
+    Thứ 4, ngày 25 tháng 02 năm 2026 - 17:00
+  </p>
+
+  <!-- Countdown -->
+  <div class="countdown reveal">
+    <div class="time-box">
+      <span id="days">00</span>
+      <small>Ngày</small>
+    </div>
+    <div class="time-box">
+      <span id="hours">00</span>
+      <small>Giờ</small>
+    </div>
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <small>Phút</small>
+    </div>
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <small>Giây</small>
+    </div>
+  </div>
+
+  <p class="quote reveal">
+    “Sự hiện diện của Quý khách là niềm vinh hạnh<br>
+    lớn lao trong ngày hạnh phúc của chúng tôi.”
+  </p>
+
+  <!-- Map -->
+  <a class="reveal"
+    href="https://maps.app.goo.gl/6dZ6ptxQuCazmDHs7"
+    target="_blank"
+    class="map-link-wrap">
+    <div class="map-wrap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564.3850879198658!2d105.91296805149082!3d21.162116238789217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313506f2dfbff457%3A0x28f26d89bf8174f9!2zVmFuIERpZW0gQ2hpbGQgU2Nob29sLCBWw6JuIEjDoCwgxJDDtG5nIEFuaCwgSMOgIE7hu5lpLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1770137811752!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+     >📍 Xem bản đồ
+    </iframe>
+  </div>
+  </a>
+  <p class="address reveal">
+    📍 Tại Thôn Vân Điềm – Xã Thư Lâm – Đông Anh – Hà Nội
+  </p>
+
+</section>
+
+<!-- Album -->
+<section class="album">
+  <h2 class="reveal">Album Ảnh Cưới</h2>
+  <p class="album-sub reveal ">
+    Những khoảnh khắc yêu thương
+  </p>
+
+  <div class="album-grid">
+    <div class="album-item">
+      <img src="img/anh3.jpg" alt="Ảnh cưới 1">
+    </div>
+    <div class="album-item">
+      <img src="img/anh4.jpg" alt="Ảnh cưới 2">
+    </div>
+    <div class="album-item">
+      <img src="img/anh2.jpg" alt="Ảnh cưới 3">
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox fullscreen -->
+<div class="lightbox" id="lightbox">
+  <img id="lightbox-img" alt="">
+</div>
+
+<!-- QR -->
+<section class="wish-section reveal">
+  <p class="wish-desc reveal">
+    Lời chúc phúc của Quý khách là món quà<br>
+    vô giá trong ngày trọng đại của vợ chồng mình.
+  </p>
+
+  <div class="wish-list">
+    <div class="wish-card reveal">
+      <div class="photo-frame">
+        <img src="img/QR.jpg" aalt="Vu Cuong">
+      </div>
+      <h3 class="wish-name">XUAN CUONG</h3>
+      <p class="wish-text">Chân thành cảm ơn!</p>
+    </div>
+
+    <div class="wish-card reveal">
+      <div class="photo-frame">
+        <img src="img/QR.jpg" aalt="Vu Cuong">
+      </div>
+      <h3 class="wish-name">NGUYEN THI THU CUONG</h3>
+      <p class="wish-text">Chân thành cảm ơn!</p>
+    </div>
+  </div>
+</section>
+
+<section class="thanks-section">
+  <h2 class="thanks-title reveal">LỜI CẢM ƠN</h2>
+  <p class="ngang reveal">------------------------</p>
+
+  <p class="thanks-text reveal">
+    Vợ chồng mình vô cùng hạnh phúc khi được đón tiếp
+    những người thân yêu trong ngày trọng đại.
+    Qua buổi lễ và những khoảnh khắc trân quý,
+    sự hiện diện của Quý khách chính là niềm vinh hạnh,
+    món quà vô giá đối với vợ chồng mình. Xin cảm ơn!
+  </p>
+
+  <p class="thanks-sign reveal">
+    – Xuân Cường · Thu Cương –
+  </p>
+
+  <div class="thanks-footer reveal">
+    Happy Wedding
+  </div>
+</section>
+
+<!-- Nhạc nền -->
+<audio id="bg-music" loop>
+  <source src="I Do.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Icon nhạc -->
+<div id="music-toggle" class="music-btn">
+  <span class="music-icon">🎵</span>
+</div>
+
+
+<script src="thiepcuoi.js"></script>
+</body>
+</html>
