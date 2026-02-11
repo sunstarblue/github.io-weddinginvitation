@@ -280,7 +280,7 @@
   }
   
   .tham {
-    font-size: 22px;
+    font-size: 20px;
     font-style: italic;
     color: #f3c46b;
     margin: 10px 0;
@@ -376,7 +376,7 @@
   
   .date-time {
     color: #f3c46b;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
   }
@@ -442,7 +442,7 @@
   }
   /* Address */
   .address {
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 36px;
   }
 
