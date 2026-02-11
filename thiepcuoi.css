@@ -281,7 +281,7 @@
   
   .tham {
     font-size: 18px;
-    color: #f3c46b;
+    color: #FFE167;
     margin: 10px 0;
     margin-top: 40px;
   }
@@ -311,7 +311,7 @@
   
   .person h4 {
     font-size: 20px;
-    color: #f3c46b;
+    color: #FFE167;
     margin: 10px 0 6px;
     font-family: 'Great Vibes', sans-serif;
     font-size: 26px;
@@ -374,7 +374,7 @@
   }
   
   .date-time {
-    color: #f3c46b;
+    color: #FFE167;
     font-size: 18px;
     margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
@@ -403,7 +403,7 @@
   
   /* Quote */
   .quote {
-    color: #f3c46b;
+    color: #FFE167;
     font-size: 26px;
     line-height: 1.4;
     margin-bottom: 24px;
@@ -461,7 +461,7 @@
     display: inline-block;
     margin: 16px auto 24px;
     padding: 12px 22px;
-    background: #f3c46b;
+    background: #FFE167;
     color: #4b0f0f;
     text-decoration: none;
     font-size: 14px;
@@ -699,7 +699,7 @@ img{
 }
 
 .thanks-title {
-  color: #f3c46b;
+  color: #FFE167;
   font-size: 24px;
   letter-spacing: 2px;
   margin-bottom: 4px;
@@ -707,7 +707,7 @@ img{
   margin-top: 40px;
 }
 .ngang{
-  color: #f3c46b;
+  color: #FFE167;
   font-family: 'Playfair Display', serif;
   margin-bottom: 18px;
 }
@@ -734,7 +734,7 @@ img{
 .thanks-footer {
   font-family: 'cursive';
   font-size: 30px;
-  color: #f3c46b;
+  color: #FFE167;
   font-family: 'Great Vibes', sans-serif;
 }
 
