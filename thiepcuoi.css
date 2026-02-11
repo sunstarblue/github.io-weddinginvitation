@@ -147,7 +147,7 @@
 
   .cover {
     position: relative;
-    height: 110vh;
+    height: 100vh;
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -167,7 +167,7 @@
     font-size: 50px;
     color: white;
     margin-bottom: 16px;
-    margin-top: 40px;
+    margin-top: 10px;
   }
   
   .photo{
@@ -176,18 +176,21 @@
     justify-content: center;
     margin-bottom: 5px;
     position: relative;
+    padding-bottom: 50px;
   }
   .photo img {
     width: 100%;
     max-width: 360px;
     border-radius: 20px;
     margin: 10px auto;
+    height: auto;
+    display: block;
   }
   
   .names {
     color: white;
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 16px;
   }
   
@@ -195,10 +198,12 @@
     color: #f0f0f0;
     font-family: 'Playfair Display', serif;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 20px;
   }
   
   .open-btn {
+    position: absolute;
+    bottom: 5px;
 
     padding: 14px 30px;
     border-radius: 30px;
