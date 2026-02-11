@@ -207,19 +207,56 @@ window.addEventListener("load", () => {
 
 const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("music-toggle");
+let hasPlayed=false;
 
-/* CLICK ICON BẬT / TẮT */
+function isMobile(){
+  return window.innerWidth <=768;
+}
+
+/* ===== Toggle nút nhạc ===== */
 musicBtn.addEventListener("click", () => {
   if (music.paused) {
     music.play();
     musicBtn.classList.add("playing");
+    hasStarted = true;
   } else {
     music.pause();
     musicBtn.classList.remove("playing");
   }
 });
 
-/* GỌI SAU KHI CỬA MỞ XONG */
+/* ===== Sau khi mở cửa ===== */
+function showMusicAfterDoor() {
+  musicBtn.classList.add("show");
+
+  if (!isMobile()) {
+    // Desktop → phát ngay
+    music.play();
+    musicBtn.classList.add("playing");
+    hasStarted = true;
+  }
+}
+
+/* ===== Mobile: chỉ cần chạm hoặc vuốt ===== */
+function startMusicOnce() {
+  if (hasStarted) return;
+
+  music.play().then(() => {
+    musicBtn.classList.add("playing");
+    hasStarted = true;
+  }).catch(() => {});
+
+  document.removeEventListener("touchstart", startMusicOnce);
+  document.removeEventListener("scroll", startMusicOnce);
+}
+
+/* Chỉ áp dụng cho mobile */
+if (isMobile()) {
+  document.addEventListener("touchstart", startMusicOnce, { passive: true });
+  document.addEventListener("scroll", startMusicOnce, { passive: true });
+}
+
+/* GỌI SAU KHI CỬA MỞ XONG 
 function showMusicAfterDoor() {
   // hiện icon
   musicBtn.classList.add("show");
@@ -228,7 +265,7 @@ function showMusicAfterDoor() {
   music.play();
     // nếu trình duyệt chặn autoplay
     musicBtn.classList.add("playing");
-}
+}*/
 
 
 
