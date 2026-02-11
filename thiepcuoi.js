@@ -97,6 +97,12 @@ setInterval(createPetal, 1600);
     }
   
     requestAnimationFrame(scrollStep);
+    // Nếu là mobile thì phát nhạc khi bấm nút
+  if (isMobile() && music.paused) {
+    music.play().then(() => {
+      musicBtn.classList.add("playing");
+    }).catch(() => {});
+  }
   }
   
   
@@ -207,54 +213,32 @@ window.addEventListener("load", () => {
 
 const music = document.getElementById("bg-music");
 const musicBtn = document.getElementById("music-toggle");
-let hasPlayed=false;
 
-function isMobile(){
-  return window.innerWidth <=768;
-}
-
-/* ===== Toggle nút nhạc ===== */
+/* CLICK ICON BẬT / TẮT */
 musicBtn.addEventListener("click", () => {
   if (music.paused) {
     music.play();
     musicBtn.classList.add("playing");
-    hasStarted = true;
   } else {
     music.pause();
     musicBtn.classList.remove("playing");
   }
 });
 
-/* ===== Sau khi mở cửa ===== */
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
 function showMusicAfterDoor() {
   musicBtn.classList.add("show");
 
+  // Desktop → phát ngay
   if (!isMobile()) {
-    // Desktop → phát ngay
     music.play();
     musicBtn.classList.add("playing");
-    hasStarted = true;
   }
 }
 
-/* ===== Mobile: chỉ cần chạm hoặc vuốt ===== */
-function startMusicOnce() {
-  if (hasStarted) return;
-
-  music.play().then(() => {
-    musicBtn.classList.add("playing");
-    hasStarted = true;
-  }).catch(() => {});
-
-  document.removeEventListener("touchstart", startMusicOnce);
-  document.removeEventListener("scroll", startMusicOnce);
-}
-
-/* Chỉ áp dụng cho mobile */
-if (isMobile()) {
-  document.addEventListener("touchstart", startMusicOnce, { passive: true });
-  document.addEventListener("scroll", startMusicOnce, { passive: true });
-}
 
 /* GỌI SAU KHI CỬA MỞ XONG 
 function showMusicAfterDoor() {
