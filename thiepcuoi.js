@@ -108,7 +108,7 @@ setInterval(createPetal, 1600);
   
   
 
-  const weddingDate = new Date("2026-02-25T17:00:00").getTime();
+  const weddingDate = new Date("2026-02-26T10:00:00").getTime();
 
   function updateCountdown() {
     const now = new Date().getTime();
